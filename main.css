@@ -1,0 +1,234 @@
+.hero-section {
+  padding: 100px 0 150px;
+  position: relative; }
+  .hero-section h1 {
+    position: relative;
+    z-index: 2; }
+
+.navbar.nav-bg {
+  background: transparent; }
+  .navbar.nav-bg.scrolled {
+    background: #36518e; }
+
+.navbar-light .navbar-toggler {
+  color: #e6e9f8; }
+.navbar-light .navbar-nav .nav-link {
+  color: #dfe2f1;
+  padding: .3rem 1rem; }
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #dfe2f1;
+    opacity: 0.8; }
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #dfe2f1;
+    background-color: #e56e2e;
+    border-radius: 1rem; }
+.navbar-light .dropdown-menu {
+  background-color: #e6e9f8;
+  color: #36518e;
+  right: 0;
+  left: auto; }
+  .navbar-light .dropdown-menu .dropdown-item {
+    color: #36518e; }
+    .navbar-light .dropdown-menu .dropdown-item:hover, .navbar-light .dropdown-menu .dropdown-item:focus {
+      background: #fff; }
+  .navbar-light .dropdown-menu.user {
+    width: 16rem; }
+    .navbar-light .dropdown-menu.user .nav-item {
+      color: #36518e; }
+    .navbar-light .dropdown-menu.user .logout {
+      justify-content: center; }
+
+.btn-transparent {
+  color: #dfe2f1; }
+  .btn-transparent:hover {
+    color: #dfe2f1; }
+
+@media (max-width: 991px) {
+  .navbar.nav-bg {
+    background: #36518e; }
+    .navbar.nav-bg .navbar-collapse {
+      padding: 20px 0px; }
+    .navbar.nav-bg .nav-item {
+      margin-bottom: 10px; }
+
+  .navbar-light .dropdown-menu {
+    background: transparent;
+    border: none; }
+    .navbar-light .dropdown-menu.user .logout {
+      justify-content: flex-start; }
+    .navbar-light .dropdown-menu .dropdown-item {
+      color: #e6e9f8; }
+      .navbar-light .dropdown-menu .dropdown-item:hover, .navbar-light .dropdown-menu .dropdown-itemfocus {
+        background: transparent; }
+  .navbar-light .brand .dropdown-menu {
+    background-color: #e6e9f8; }
+    .navbar-light .brand .dropdown-menu .dropdown-item {
+      color: #36518e; } }
+body {
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color: #424241; }
+
+p, .paragraph {
+  font-weight: 400;
+  color: #424241;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif; }
+  p-lg, .paragraph-lg {
+    font-size: 22px; }
+
+h1, h2, h3, h4, h5 {
+  color: #000;
+  line-height: 1.2; }
+
+h1, .h1 {
+  font-size: 60px; }
+
+h2, .h2 {
+  font-size: 40px; }
+
+h3, .h3 {
+  font-size: 30px; }
+
+h4, .h4 {
+  font-size: 22px; }
+
+h5, .h5 {
+  font-size: 18px; }
+
+h6, .h6 {
+  font-size: 14px; }
+
+.bold {
+  font-weight: 700; }
+
+.btn {
+  border-radius: 1rem; }
+
+.btn-check:focus + .btn, .btn:focus {
+  box-shadow: none; }
+
+.btn-outline-primary {
+  border-color: #36518e;
+  background-color: #e6e9f8;
+  color: #36518e; }
+  .btn-outline-primary:hover {
+    background-color: #36518e;
+    border-color: #36518e; }
+
+.icon {
+  position: relative;
+  left: 6px;
+  margin-right: 6px; }
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.7; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #e6e9f8; }
+
+.hamburger-box {
+  width: 20px;
+  height: 14px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -1px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 20px;
+    height: 2px;
+    background-color: #e6e9f8;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -6px; }
+  .hamburger-inner::after {
+    bottom: -6px; }
+
+/*
+ * Slider
+ */
+.hamburger--slider .hamburger-inner {
+  top: 1px; }
+  .hamburger--slider .hamburger-inner::before {
+    top: 6px;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.15s; }
+  .hamburger--slider .hamburger-inner::after {
+    top: 12px; }
+.hamburger--slider.is-active .hamburger-inner {
+  transform: translate3d(0, 6px, 0) rotate(45deg); }
+  .hamburger--slider.is-active .hamburger-inner::before {
+    transform: rotate(-45deg) translate3d(-2.8571428571px, -4px, 0);
+    opacity: 0; }
+  .hamburger--slider.is-active .hamburger-inner::after {
+    transform: translate3d(0, -12px, 0) rotate(-90deg); }
+
+body {
+  background: url("img/bg.svg") top left no-repeat #e6e9f8;
+  background-size: contain; }
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.step-links {
+  margin: auto; }
+
+#btn-pagination {
+  background: #536DFE;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center; }
+
+.table-row {
+  cursor: pointer; }
+
+#ticket_table tbody tr:hover td, #ticket_table tbody tr:hover th {
+  background-color: #e6f7ff; }
+
+.main_navbar {
+  background: #536DFE; }
+
+/*# sourceMappingURL=main.css.map */

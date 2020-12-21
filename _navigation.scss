@@ -1,0 +1,99 @@
+.navbar.nav-bg{
+  background: transparent;
+  &.scrolled{
+    background: $primary-color;
+  }
+}
+.navbar-light{
+  .navbar-toggler{
+    color: $secondary-color;
+  }
+  .navbar-nav{
+    .nav-link{
+      color: $text-color-light;
+      padding: .3rem 1rem;
+      &:hover, &:focus{
+        color: $text-color-light;
+        opacity: 0.8;
+      }
+      &.active{
+        color: $text-color-light;
+        background-color: $orange;
+        border-radius: 1rem;
+      }
+    }
+  }
+  .dropdown-menu{
+    background-color: $secondary-color;
+    color: $primary-color;
+    right:0;
+    left: auto;
+
+    .dropdown-item{
+      color: $primary-color;
+      &:hover, &:focus{
+        background: $white;
+      }
+    }
+
+    &.user{
+      width: 16rem;
+
+      .nav-item{
+        color:$primary-color;
+      }
+      .logout{
+        justify-content: center;
+      }
+    }
+  }
+
+}
+.btn-transparent{
+  color: $text-color-light;
+  &:hover{
+    color: $text-color-light;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .navbar.nav-bg{
+    background: $primary-color;
+    .navbar-collapse{
+    padding: 20px 0px;
+    }
+    .nav-item{
+      margin-bottom: 10px;
+
+    }
+  }
+  .navbar-light{
+    .dropdown-menu{
+      background: transparent;
+      border: none;
+      &.user{
+        .logout{
+          justify-content: flex-start;
+        }
+      }
+      .dropdown-item{
+        color: $secondary-color;
+        &:hover, &focus{
+          background: transparent;
+        }
+
+      }
+    }
+    .brand{
+      .dropdown-menu{
+        background-color: $secondary-color;
+        .dropdown-item{
+        color: $primary-color;
+      }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'hero-area';
+@import 'navigation';
+@import 'typography';
+@import 'buttons';
+@import 'hamburger';
+
+
+body{
+  background: url('img/bg.svg') top left no-repeat $secondary-color;
+  background-size: contain;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.step-links{
+  margin: auto;
+}
+
+#btn-pagination{
+  background: #536DFE;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-row{
+  cursor: pointer;
+}
+
+#ticket_table tbody tr:hover td, #ticket_table tbody tr:hover th {
+background-color: #e6f7ff;
+}
+
+.main_navbar{
+  background: #536DFE
+}

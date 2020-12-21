@@ -1,0 +1,22 @@
+.btn{
+  border-radius: 1rem;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+.btn-outline-primary{
+  border-color: $primary-color;
+  background-color: $secondary-color;
+  color: $primary-color;
+  &:hover{
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.icon{
+  position: relative;
+  left: 6px;
+  margin-right: 6px;
+}
